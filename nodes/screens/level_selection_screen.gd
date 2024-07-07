@@ -10,6 +10,7 @@ func _ready():
 		var new_button = Button.new()
 		new_button.text = level.name
 		new_button.connect("pressed", func():
-			print("load level: " + level.name)
+			Varibles.current_level = level
+			Screens.change_screen(Types.screens.play)
 			)
 		_vbox.add_child(new_button)
