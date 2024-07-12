@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://csxk2x1tfl3eq"]
+
+[ext_resource type="Script" path="res://nodes/crates.gd" id="1_j3l0y"]
+
+[node name="Crates" type="CharacterBody2D"]
+script = ExtResource("1_j3l0y")
