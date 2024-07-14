@@ -1,6 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://b3p0ro3xrox52"]
+[gd_scene load_steps=4 format=3 uid="uid://b3p0ro3xrox52"]
 
 [ext_resource type="Script" path="res://nodes/player.gd" id="1_a0vx1"]
+[ext_resource type="Texture2D" uid="uid://buidhov2bv0dn" path="res://images/sokoban_tilesheet.png" id="2_o4j2v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jec3v"]
+atlas = ExtResource("2_o4j2v")
+region = Rect2(0, 256, 64, 64)
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_a0vx1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_jec3v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
